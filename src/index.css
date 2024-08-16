@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  min-width: 500px;
 }
 
 header {
@@ -355,7 +356,7 @@ header {
     padding: none;
   }
   .logement-card {
-    width: 100%;
+    width: 500px;
   }
   .banner-text {
     font-size: 30px;
