@@ -1,7 +1,10 @@
+import React from 'react';
+
 export default function Slideshow(props) {
   return (
     <section>
       <div className="slideshow_container">
+        {/* Affiche le bouton précédent seulement si le nombre d'images est supérieur à 1 */}
         {props.length > 1 && (
           <div className="slideshowPrevious" onClick={props.showPrev}>
             <svg
@@ -19,12 +22,14 @@ export default function Slideshow(props) {
           </div>
         )}
 
+        {/* Affiche l'image actuelle */}
         <img
           className="slideshowImg"
           src={props.image}
           alt={`Image : ${props.title}`}
         />
 
+        {/* Affiche le bouton suivant seulement si le nombre d'images est supérieur à 1 */}
         {props.length > 1 && (
           <div className="slideshowNext" onClick={props.showNext}>
             <svg
@@ -41,6 +46,8 @@ export default function Slideshow(props) {
             </svg>
           </div>
         )}
+
+        {/* Affiche le compteur d'images seulement si le nombre d'images est supérieur à 1 */}
         {props.length > 1 && (
           <div className="slideshowCount">
             {props.currentImg + 1}/{props.length}
