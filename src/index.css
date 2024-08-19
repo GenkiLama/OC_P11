@@ -2,9 +2,6 @@ body {
   padding: 50px;
   min-width: 500px;
 }
-nav{
-  font-family: "Montserrat", sans-serif;
-}
 header {
   background-color: #ffffff;
   padding: 45px 0 50px 0;
@@ -388,14 +385,22 @@ header {
   .footer {
     height: 400px;
   }
+ 
   .slideshowImg {
     height: 300px;
   }
+  
+  /* Changement soutenance ci-dessous = Texte en uppercase en mode mobile :  */
   .navBar a{
     text-transform: uppercase;
     font-size: 15px;
     margin:none;
     padding:none;
-    font-weight: 500;
   }
+
+}
+ /* Changement soutenance ci-dessous = Font family sur les éléments de navigation  */
+  
+nav {
+  font-family: "Montserrat", sans-serif;
 }
